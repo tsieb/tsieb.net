@@ -1,0 +1,21 @@
+.toggleParent {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sectionToggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}

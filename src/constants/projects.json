@@ -1,0 +1,90 @@
+[  
+  {
+    "title": "URepair Web App",
+    "summary": "The URepair Web App is a user-friendly online marketplace designed to connect repair specialists with individuals seeking repair services.",
+    "body": "Developed in collaboration with a team of students, this platform features a React.js frontend and a robust C++ backend, along with a custom-built database for information persistence. With secure login, signup, and user profile management, URepair streamlines the process of finding and connecting with repair professionals, delivering an enhanced user experience for both specialists and clients. The code is public on GitHub: /tsieb/URepair",    
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["C++", "React.js", "Database", "Javascript"],
+    "start": "2022-10-1",
+    "end": "2022-12-21",
+    "row": 0
+  },
+  {
+    "title": "Remote Car Starter",
+    "summary": "The Remote Car Starter project is an innovative prototype that offers smart and secure vehicle control using a Xilinx FPGA and VHDL.",
+    "body": "Developed individually, this project involved designing a robust system for handling inputs, wireless responses, and output to status indicator lights. The remote car starter enables users to control their car's door, trunk, heater, and engine functions wirelessly, providing a seamless and convenient experience. The project also served as a platform for learning and refining skills in hardware description languages and presenting technical information clearly and concisely.",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["VHDL"],
+    "start": "2022-01-12",
+    "end": "2022-04-25",
+    "row": 1
+  },
+  {
+    "title": "Discord Bot",
+    "summary": "The Discord Bot is a versatile tool developed to enhance user validation and management in private servers.",
+    "body": "Designed to streamline the process of validating new users entering a private server, the Discord Bot requests user information, sends a validation email, and updates their status in a database. By leveraging Discord.py and repl.it APIs, as well as a Flask app, the bot integrates seamlessly into the server environment. This project demonstrates a deep understanding of asynchronous functions, database optimization, and email protocols. The bot code is public on GitHub: /tsieb/TRUEngineeringBot",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["Python"],
+    "start": "2021-01-01",
+    "end": "2022-09-28",
+    "row": 0
+  },
+  {
+    "title": "Tethered RC Submersible",
+    "summary": "The Submersible Project is an innovative underwater probe designed to analyze freshwater lake beds using advanced sensor technology.",
+    "body": "As part of the TRUSU Engineering Club, this project involved the creation of a robotic underwater probe equipped with sensors to gather data from freshwater lake beds. The electronics and propulsion system were designed from scratch, with a micro-controller used to develop the signaling protocol for controlling the submersible. This project expanded skills in circuit design, wireline communication, and modular teamwork, contributing to a functional and unique underwater exploration tool.",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["Circuit Design", "Digital Communication"],
+    "start": "2020-01-07",
+    "end": "2020-06-16",
+    "row": 0
+  },
+  {
+    "title": "Portfolio Website",
+    "summary": "A visually appealing and user-friendly portfolio website showcasing personal projects and accomplishments.",
+    "body": "This website was designed and developed using React. It was built to highlight a range of technical skills, projects, and achievements. The site features an engaging user interface and responsive design. Incoporating various filters, the site allows visitors to explore different areas of expertise and gain insight into the my personal and profesional journey with development and engineering. The code for this portfolio website is available on GitHub: /tsieb/tsieb.net",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["Javascript", "React.js"],
+    "start": "2023-01-01",
+    "end": "2023-04-21",
+    "row": 0
+  },
+  {
+    "title": "Android Voting App",
+    "summary": "An innovative Online Voting System app designed to enable managers to efficiently gather staff votes on various topics remotely.",
+    "body": "Built in Java for Android devices, this app allows managers to create and manage voting topics, while staff can easily cast their votes from anywhere. Leveraging Firebase as its backend database, the app securely handles user logins, votes, and voting topics. The Online Voting System also generates relevant statistics to provide insights into the voting results, streamlining the decision-making process for managers. The code is publicly available on GitHub: /tsieb/OnlineVotingSystem",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["Java", "Database", "Android"],
+    "start": "2023-01-15",
+    "end": "2023-04-21",
+    "row": 1
+  },
+  {
+    "title": "DuckDuckGo",
+    "summary": "A machine learning-based image classification project developed within a 12-hour hackathon, showcasing adaptability and collaboration skills.",
+    "body": "Collaborated with a team to create a machine learning model for image classification using TensorFlow, a mobile app in Flutter, and a REST API for communication between components. The project demonstrated the ability to work effectively under pressure, learn new technical skills rapidly, and manage complex tasks within a tight deadline. The successful completion of the project resulted in a fourth-place finish overall in the competition. The code for this image classification project is available on GitHub: /YourUsername/ImageClassificationRepo",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["Java", "Database"],
+    "start": "2022-02-2",
+    "end": "2022-04-2",
+    "row": 2
+  },
+  {
+    "title": "The Book of Tomorrow",
+    "summary": "A versatile Discord bot that searches a library of books, providing personalized suggestions based on user search parameters.",
+    "body": "Created during a hackathon, this Discord bot employs Discord.py and Google Books APIs to search and recommend books based on user-defined criteria. The bot also allows users to store their favorite books in a custom database, maintained in a REST API using Spring Boot (Tomcat). Each user has their own unique book list, enabling a personalized experience. The bot showcases the ability to develop functional solutions under tight deadlines and work effectively within a team. The code is available on GitHub: /YourUsername/YourBookBotRepo",
+    "images": ["images/python.png", "images/vhdl.png", "images/cpp.png", "images/c.png"],
+    "alt_text": ["alt1", "alt2", "alt3", "alt4"],
+    "topics":["Java", "Python", "Database"],
+    "start": "2021-02-2",
+    "end": "2021-05-15",
+    "row": 1
+  }
+]

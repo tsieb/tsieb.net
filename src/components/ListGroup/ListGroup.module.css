@@ -1,0 +1,36 @@
+.list-container {
+  display: flex;
+}
+
+.list-item {
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.5s ease, opacity 0.5s ease;
+}
+
+.list-item-selected {
+  background: #3b3c52;
+  opacity: 1.5;
+}
+
+.list-item-unselected {
+  background: #0b0c22;
+  opacity: 0.7;
+}
+
+.list-image {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 5%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.list-image-selected {
+  opacity: 1;
+}
+
+.list-image-unselected {
+  opacity: 0;
+}

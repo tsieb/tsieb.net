@@ -1,0 +1,131 @@
+/* Variables */
+:root {
+  --primary-bg-color: #0b0c22;
+  --primary-text-color: white;
+  --transition-duration: 0.5s;
+  --transition-timing: ease-in-out;
+}
+
+/* Global Styles */
+html, body {
+  margin: 0 20px;
+  padding: 0;
+  background-color: var(--primary-bg-color);
+  overflow-x: hidden;
+}
+
+/* App Styles */
+.app {
+  font-family: sans-serif;
+  color: var(--primary-text-color);
+}
+
+/* Toggle Button */
+.toggle-button {
+  color: var(--primary-text-color);
+  border-width: 0;
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+}
+
+/* Animations */
+.slide-in {
+  transform: translateX(-100%);
+  transition: transform var(--transition-duration) var(--transition-timing);
+  animation: slide-in var(--transition-duration) var(--transition-timing) forwards;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* Text Styles */
+.text {
+  &__name {
+    font-family: Copperplate;
+    font-size: 400%;
+    text-align: center;
+    height: 75px;
+  }
+
+  &__cycler {
+    &__content {
+      text-align: center;
+      animation: fadeinout 3s var(--transition-timing);
+    }
+
+    &__content--visible {
+      opacity: 1;
+    }
+
+    &__content--hidden {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes fadeinout {
+  0%, 100% { opacity: 0; }
+  15%, 85% { opacity: 1; }
+}
+
+/* List Group */
+.list-group {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 10px 0;
+  }
+
+  &__image {
+    position: relative;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    transition: visibility var(--transition-duration) var(--transition-timing), left var(--transition-duration) var(--transition-timing);
+  }
+
+  &__item:hover + &__image,
+  &__image--visible {
+    visibility: visible;
+  }
+}
+
+/* Other Styles */
+.title {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.summary {
+  font-style: italic;
+  font-size: 180%;
+}
+
+.body {
+  line-height: 1.8;
+  font-size: 120%;
+  word-wrap: break-word;
+  max-width: 80%;
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}

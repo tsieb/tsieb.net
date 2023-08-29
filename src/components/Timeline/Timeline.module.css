@@ -1,0 +1,23 @@
+:root {
+  --line-color: white;
+}
+
+.fullDiv {
+  position: relative;
+}
+
+.horizontal-line {
+  border-top: 1px solid var(--line-color);
+}
+
+.vertical-line {
+  position: absolute;
+  top: -5px;
+  width: 1px;
+  height: 20px;
+  background-color: var(--line-color);
+}
+
+.horizontal-line-container {
+  position: relative;
+}

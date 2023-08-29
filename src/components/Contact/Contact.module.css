@@ -1,0 +1,12 @@
+.contact-container {
+  margin-top: 20px;
+}
+
+.contact-title {
+  font-size: 200%;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+}

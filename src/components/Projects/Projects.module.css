@@ -1,0 +1,13 @@
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.title {
+  padding-right: 30px;
+}
+
+.topics, .summary, .body {
+  margin-top: 10px;
+}
