@@ -1,4 +1,21 @@
-.project-container {
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Spacing between project items */
+}
+
+.projectBorder {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.projectBackground {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  color: #f1f1f1; /* Light text color */
+  padding: 16px;
+}
+
+.projectContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -6,8 +23,33 @@
 
 .title {
   padding-right: 30px;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-.topics, .summary, .body {
-  margin-top: 10px;
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.topicButton {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.summary {
+  margin-top: 16px;
+  font-style: italic;
+}
+
+.body {
+  margin-top: 16px;
+  line-height: 1.5;
 }

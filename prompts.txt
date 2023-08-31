@@ -1,0 +1,16 @@
+I have a complex react component that has serious performance issues. Below are the pieces that make up the component.
+src/components/CustomBackground/index.jsx
+
+
+src/components/CustomBackground/CustomBackground.module.css
+
+
+src/hooks/useCanvasGradient.js
+
+
+
+src/hooks/useStars.js
+
+
+
+src/utils/index.js

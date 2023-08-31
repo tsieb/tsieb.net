@@ -1,7 +1,5 @@
 .toggleParent {
-  display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .sectionToggle {
@@ -14,8 +12,4 @@
 
 .invert {
   filter: invert(100%);
-}
-
-.rotate {
-  transform: rotate(-90deg);
 }

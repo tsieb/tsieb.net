@@ -1,19 +1,26 @@
 import React from 'react';
 import styles from './Projects.module.css';
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project, setSelectedCategory }) => {
   const { title, topics, summary, body } = project;
 
+  const handleButtonClick = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
-    <div>
+    <div className={styles.projectBackground}>
       <div className={styles.projectContainer}>
         <div className={styles.title}>{title}</div>
         <div className={styles.topics}>
           {topics.map((topic, index) => (
-            <span key={index}>
+            <button 
+              key={index} 
+              className={styles.topicButton}
+              onClick={() => handleButtonClick(topic)}
+            >
               {topic}
-              {index < topics.length - 1 && ' | '}
-            </span>
+            </button>
           ))}
         </div>
       </div>

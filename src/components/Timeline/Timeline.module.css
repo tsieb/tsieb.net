@@ -1,23 +1,77 @@
 :root {
-  --line-color: white;
+  --line-color: #aaa;
+  --text-color: #f4f4f4;
+  --bg-color: rgba(0, 0, 0, 0.8);
+  --box-color: #007bff;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: var(--container-bg-color);
+  border-radius: 10px;
+  border: 2px solid var(--box-color);
+  padding: 10px;
+  display: inline-block;
 }
 
 .fullDiv {
   position: relative;
+  width: calc(100% - 20px);
+  color: var(--text-color);
+  overflow: visible;
 }
 
-.horizontal-line {
+
+.horizontalLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  height: 5px;
   border-top: 1px solid var(--line-color);
 }
 
-.vertical-line {
+.verticalLine {
   position: absolute;
-  top: -5px;
+  top: 0;
+  bottom: 0;
   width: 1px;
-  height: 20px;
+  height: 15px;
   background-color: var(--line-color);
 }
 
-.horizontal-line-container {
-  position: relative;
+.projectContainer {
+  position: absolute;
+}
+
+.project {
+  position: absolute;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  border: 2px solid transparent;
+  transform: perspective(600px);
+  box-shadow: 0px 4px 8px 0px #00000040;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #dddddd;
+}
+
+.project.sameCategory {
+  border-color: #007bff;
+}
+
+.project.selected {
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.project:hover {
+  transform: perspective(600px) translateZ(20px);
+  box-shadow: 0px 8px 16px 0px #00000060;
 }

@@ -1,0 +1,34 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  pointer-events: none;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.star {
+  background-color: var(--initial-color);
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.562);
+  border-radius: 50%;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  transition: background-color 0.5s ease;
+}
+
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -2;
+}

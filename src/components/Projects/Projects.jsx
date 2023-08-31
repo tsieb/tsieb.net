@@ -2,10 +2,9 @@ import React, { useMemo } from 'react';
 import ProjectItem from './ProjectItem';
 import styles from './Projects.module.css';
 
-// Extracted component for "No Projects" message
 const NoProjectsMessage = () => <div>No Dedicated Projects (Yet!)</div>;
 
-const Projects = ({ projects, selected, selectedProject }) => {
+const Projects = ({ projects, selected, selectedProject, setSelectedCategory }) => {
   const projectsToDisplay = useMemo(() => {
     if (selectedProject !== null) {
       return projects.filter((_, i) => i === selectedProject);
@@ -19,10 +18,16 @@ const Projects = ({ projects, selected, selectedProject }) => {
   const isEmpty = projectsToDisplay.length === 0;
 
   return (
-    <div>
+    <div className={styles.projectList}>
       {isEmpty && selected !== null && <NoProjectsMessage />}
       {projectsToDisplay.map((project) => (
-        <ProjectItem key={project.id || project.title} project={project} />
+        <div className={styles.projectBorder}>
+          <ProjectItem 
+            key={project.id || project.title} 
+            project={project} 
+            setSelectedCategory={setSelectedCategory}
+          />
+        </div>
       ))}
     </div>
   );
